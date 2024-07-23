@@ -1,0 +1,30 @@
+{
+    "name": "make-parser",
+    "version": "0.0.0-alpha.0",
+    "description": "A flexible tool for making parsers, quickly.",
+    "type": "module",
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "require": "./dist/index.cjs",
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "scripts": {
+        "build": "rollup --config",
+        "dev": "rollup --config --watch --sourcemap"
+    },
+    "keywords": [
+        "parser",
+        "typescript"
+    ],
+    "author": "Daniel F.H.",
+    "license": "ISC",
+    "devDependencies": {
+        "@rollup/plugin-typescript": "^11.1.6",
+        "rollup": "^4.19.0",
+        "rollup-plugin-dts": "^6.1.1",
+        "tslib": "^2.6.3",
+        "typescript": "^5.5.4"
+    }
+}

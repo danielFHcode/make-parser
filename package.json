@@ -1,0 +1,21 @@
+{
+    "name": "4",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "concurrently \"pnpm run -C packages/core build\"",
+        "dev": "concurrently \"pnpm run -C packages/core dev\"",
+        "format": "prettier --write .",
+        "format:check": "prettier --check .",
+        "format:watch": "onchange -i '**/*' -- prettier --write --ignore-unknown {{changed}}"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "concurrently": "^8.2.2",
+        "onchange": "^7.1.0",
+        "vite-node": "^2.0.4"
+    }
+}
