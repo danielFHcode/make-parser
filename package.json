@@ -13,6 +13,7 @@
     "keywords": [],
     "author": "",
     "license": "ISC",
+    "repository": "https://github.com/danielFHcode/make-parser.git",
     "devDependencies": {
         "concurrently": "^8.2.2",
         "onchange": "^7.1.0",
